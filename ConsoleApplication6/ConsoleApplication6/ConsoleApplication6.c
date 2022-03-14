@@ -2,166 +2,162 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#define MAX 10
 
-
-typedef struct dvd {	
-	char * title; 
-	char * staging;
-	char * type;
-	int year_of_production;
-	char * music;
-	int time;
-}dvd;
-typedef struct{
-    dvd* array;
-    size_t used;
-    size_t size;
-
-}Array;
-
-//Initial an array
-void initArray(Array* a, size_t initialSize);
-// Add element to array
-void insertArray(Array* a, dvd element);
-//UI
 void menu();
 
 
+typedef struct dvd {	
+	char title[MAX]; 
+	char staging[MAX];
+	char type[MAX];
+	int year_of_production;
+	char music[MAX];
+	int time;
+}dvd;
+
+typedef struct node {
+    dvd *data;
+    struct node* next;
+} node;
+
+typedef struct list
+{
+    node* head;
+} list;
+
+void start(list* L)
+{
+    L->head = NULL;
+}
+
+int push_back(list* L, char* title_new, char* staging_new, char* type_new, char* music_new, int year_of_production_new,int time_new)
+{
+    node* new_node = malloc(sizeof(node));
+    dvd* nowy = malloc(sizeof(dvd));
+    if (!new_node || !nowy)
+    {
+        free(new_node);
+        free(nowy);
+        return 0;
+    }
+
+    strcpy(nowy->title, title_new);
+    strcpy(nowy->staging, staging_new);
+    strcpy(nowy->type, type_new);
+    strcpy(nowy->music, music_new);
+    nowy->year_of_production = year_of_production_new;
+    nowy->time = time_new;
 
 
+    new_node->data = nowy;
+
+    if (L->head == NULL)
+    {
+        L->head = new_node;
+        L->head->next = NULL;
+
+    }
+    else
+    {
+        new_node->next = NULL;
+    }
+    return 1;
+
+
+}
+
+void print_list(list* L)
+{
+    node* traverse = L->head;
+    while (traverse != NULL)
+    {
+        printf("%s %s %s %s %d %d", traverse->data->title, traverse->data->staging, traverse->data->type, traverse->data->music, traverse->data->time, traverse->data->year_of_production);
+        printf("\n");
+        traverse = traverse->next;
+
+    }
+}
 
 
 int main()
 {
-    Array a;
-    dvd dvds;
-    int user_selection;
+    list dvds;
+    start(&dvds);
+    char* t = malloc(sizeof(char)*100);
+    char* a = malloc(sizeof(char) * 100);
+    char* f = malloc(sizeof(char) * 100);
+    char* g = malloc(sizeof(char) * 100);
+    t = "s";
+    a = "b";
+    f = "f";
+    g = "d";
+    
+    int test = push_back(&dvds, t,a, f, g, 1, 2);
 
 
+    if (test) {
+
+        print_list(&dvds);
+
+    }
+    else printf("xd");
+
+        return 0;
+
+
+
+
+
+    /*int user_selection;
+   
+    
+    while(1){
     menu();
 
-
+    
 
     scanf("%d", &user_selection);
 
-    
-    
-
-        switch (user_selection)
-        {
-        case 1:
-            printf("1*\n");
-           
-      
-
-            initArray(&a, 10);
-
-            printf("%s\n", a.array[0].title);
-            printf("%s\n", a.array[0].staging);
-            printf("%s\n", a.array[0].type);
-            printf("%d\n", a.array[0].year_of_production);
-            printf("%s\n", a.array[0].music);
-            printf("%d\n", a.array[0].time);
-            
-            
-            printf("\n");
-            printf("\n");
-            printf("\n");
-
-            dvds.title = "nara";
-            dvds.music = "nara";
-            dvds.staging = "nara";
-            dvds.time = 89;
-            dvds.type = "nara";
-            dvds.year_of_production = 89;
-
-            insertArray(&a, dvds);
-
-            printf("%s\n", a.array[1].title);
-            printf("%s\n", a.array[1].staging);
-            printf("%s\n", a.array[1].type);
-            printf("%d\n", a.array[1].year_of_production);
-            printf("%s\n", a.array[1].music);
-            printf("%d\n", a.array[1].time);
-
-            break;
 
 
-        case 2:
-            printf("2*\n");
-            break;
-
-
-        case 3:
-            printf("3*\n");
-            break;
-
-        default:
-            printf("d*\n");
-            break;
-
-        }
-
-
-
-    
-	return 0;
-}
-
-
-
-
-void insertArray(Array* a, dvd element)
-{
-    if (a->used == a->size)
+    switch (user_selection)
     {
-        a->size *= 6;
-        a->array = (dvd*)realloc(a->array, a->size * sizeof(dvd));
+    case 1:
+        
+
+        break;
+
+
+    case 2:
+       
+
+        break;
+
+
+
+    case 3:
+        
+
+
+        break;
+
+    default:
+        printf("d*\n");
+        break;
+
     }
 
-    // Copy title
-    a->array[a->used].title = (char*)malloc(strlen(element.title) + 1);
-    strcpy(a->array[a->used].title, element.title);
-
-    // Copy staging
-    a->array[a->used].staging = (char*)malloc(strlen(element.staging) + 1);
-    strcpy(a->array[a->used].staging, element.staging);
-
-    // Copy type
-    a->array[a->used].type = (char*)malloc(strlen(element.type) + 1);
-    strcpy(a->array[a->used].type, element.type);
-
-    // Copy year_of_production
-    a->array[a->used].year_of_production = element.year_of_production;
-
-    // Copy music
-    a->array[a->used].music = (char*)malloc(strlen(element.music) + 1);
-    strcpy(a->array[a->used].music, element.music);
 
 
-    // Copy year_of_production
-    a->array[a->used].time = element.time;
-
-
-
-    a->used++;
-}
-
-
-void initArray(Array* a, size_t initialSize)
-{
-    // Allocate initial space
-    a->array = (dvd*)malloc(initialSize * sizeof(dvd));
-
-    a->used = 0;           // no elements used
-    a->size = initialSize; // available nr of elements
-
-    // Initialize all values of the array to 0
-    for (unsigned int i = 0; i < initialSize; i++)
-    {
-        memset(&a->array[i], 0, sizeof(dvd));
+}*/
+        
     }
-}
+
+
+
+
+
 
 
 void menu() {
