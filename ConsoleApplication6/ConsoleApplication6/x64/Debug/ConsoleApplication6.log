@@ -1,3 +1,8 @@
 ﻿  ConsoleApplication6.c
-C:\ccc\jimp2p1\ConsoleApplication6\ConsoleApplication6\ConsoleApplication6.c(265,17): warning C4098: "loaddb": funkcja "void" zwraca wartość
-  ConsoleApplication6.vcxproj -> C:\ccc\jimp2p1\ConsoleApplication6\x64\Debug\ConsoleApplication6.exe
+C:\Users\birdd\source\repos\jimp2p1\ConsoleApplication6\ConsoleApplication6\ConsoleApplication6.c(128,11): warning C4477: „scanf”: ciąg formatu „%d” wymaga argumentu typu „int *”, ale argument 1 ze zmienną liczbą argumentów ma typ „int **”
+C:\Users\birdd\source\repos\jimp2p1\ConsoleApplication6\ConsoleApplication6\ConsoleApplication6.c(130,11): warning C4477: „scanf”: ciąg formatu „%d” wymaga argumentu typu „int *”, ale argument 1 ze zmienną liczbą argumentów ma typ „int **”
+C:\Users\birdd\source\repos\jimp2p1\ConsoleApplication6\ConsoleApplication6\ConsoleApplication6.c(131,85): warning C4047: "funkcja": "int" różni się w poziomach operatorów pośrednich od "int *"
+C:\Users\birdd\source\repos\jimp2p1\ConsoleApplication6\ConsoleApplication6\ConsoleApplication6.c(131,63): warning C4024: "push_back": różne typy dla formalnego i rzeczywistego parametru 6
+C:\Users\birdd\source\repos\jimp2p1\ConsoleApplication6\ConsoleApplication6\ConsoleApplication6.c(131,95): warning C4047: "funkcja": "int" różni się w poziomach operatorów pośrednich od "int *"
+C:\Users\birdd\source\repos\jimp2p1\ConsoleApplication6\ConsoleApplication6\ConsoleApplication6.c(131,87): warning C4024: "push_back": różne typy dla formalnego i rzeczywistego parametru 7
+  ConsoleApplication6.vcxproj -> C:\Users\birdd\source\repos\jimp2p1\ConsoleApplication6\x64\Debug\ConsoleApplication6.exe
