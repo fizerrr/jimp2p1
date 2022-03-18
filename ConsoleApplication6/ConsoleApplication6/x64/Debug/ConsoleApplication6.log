@@ -1,3 +1,5 @@
 ﻿  ConsoleApplication6.c
-C:\ccc\jimp2p1\ConsoleApplication6\ConsoleApplication6\ConsoleApplication6.c(265,17): warning C4098: "loaddb": funkcja "void" zwraca wartość
+C:\ccc\jimp2p1\ConsoleApplication6\ConsoleApplication6\ConsoleApplication6.c(252,21): warning C4047: "funkcja": "list *" różni się w poziomach operatorów pośrednich od "list **"
+C:\ccc\jimp2p1\ConsoleApplication6\ConsoleApplication6\ConsoleApplication6.c(252,19): warning C4024: "howlong": różne typy dla formalnego i rzeczywistego parametru 1
+C:\ccc\jimp2p1\ConsoleApplication6\ConsoleApplication6\ConsoleApplication6.c(295,21): warning C4098: "loaddb": funkcja "void" zwraca wartość
   ConsoleApplication6.vcxproj -> C:\ccc\jimp2p1\ConsoleApplication6\x64\Debug\ConsoleApplication6.exe
