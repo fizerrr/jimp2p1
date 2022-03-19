@@ -34,7 +34,7 @@ void loaddb(list* L);
 
 void print_list(list* L);
 
-void insertdata(list* L,char* title_new, char* staging_new, char* type_new, char* music_new, int* year_of_production_new, int* time_new);
+void insertdata(list* L, char* title_new, char* staging_new, char* type_new, char* music_new, int* year_of_production_new, int* time_new);
 
 int print_wanteds(list* L, char* wanted);
 
@@ -43,7 +43,7 @@ void delete_node(list* L, node* p);
 
 void savedb(list* L);
 
-   
+
 
 
 int main()
@@ -76,7 +76,7 @@ int main()
         switch (user_selection)
         {
         case '1':
-            insertdata(&dvds,title_new, staging_new, type_new, music_new, &year_of_production_new, &time_new);
+            insertdata(&dvds, title_new, staging_new, type_new, music_new, &year_of_production_new, &time_new);
             break;
 
 
@@ -96,7 +96,7 @@ int main()
             savedb(&dvds);
             break;
 
-    
+
 
 
         default:
@@ -105,7 +105,7 @@ int main()
 
         }
 
-        
+
 
     }
 
@@ -113,7 +113,7 @@ int main()
 }
 
 
-void insertdata(list *L,char* title_new, char* staging_new, char* type_new, char* music_new, int* year_of_production_new, int* time_new)
+void insertdata(list* L, char* title_new, char* staging_new, char* type_new, char* music_new, int* year_of_production_new, int* time_new)
 {
     printf("!!!USE _ instead space!!!\n");
     printf("Title: ");
@@ -213,14 +213,14 @@ void print_list(list* L)
 int print_wanteds(list* L, char* wanted)
 {
     int test = 0;
-    node* traverse = L->head; 
+    node* traverse = L->head;
     while (traverse != NULL)
     {
         if (strcmp(wanted, traverse->data->title) == 0)
         {
-        printf("| Title: [%s] | Staging: [%s] | Type: [%s] | Music: [%s] | Year of production: [%d] | Time: [%d minutes] |", traverse->data->title, traverse->data->staging, traverse->data->type, traverse->data->music, traverse->data->year_of_production, traverse->data->time);
-        printf("\n");
-        test++;
+            printf("| Title: [%s] | Staging: [%s] | Type: [%s] | Music: [%s] | Year of production: [%d] | Time: [%d minutes] |", traverse->data->title, traverse->data->staging, traverse->data->type, traverse->data->music, traverse->data->year_of_production, traverse->data->time);
+            printf("\n");
+            test++;
         }
         traverse = traverse->next;
     }
@@ -237,7 +237,7 @@ void savedb(list* L)
 
     while (traverse != NULL)
     {
-        fprintf(file,"%s %s %s %s %d %d", traverse->data->title, traverse->data->staging, traverse->data->type, traverse->data->music, traverse->data->year_of_production, traverse->data->time);
+        fprintf(file, "%s %s %s %s %d %d", traverse->data->title, traverse->data->staging, traverse->data->type, traverse->data->music, traverse->data->year_of_production, traverse->data->time);
         fprintf(file, "\n");
         traverse = traverse->next;
     }
@@ -263,7 +263,7 @@ void loaddb(list* L)
 
     while (1) // 1 -> true
     {
- 
+
 
         fscanf(file, "%s ", title_new);
         if (strcmp(title_new, "*") == 0) break;
@@ -273,11 +273,10 @@ void loaddb(list* L)
         fscanf(file, "%d ", &year_of_production_new);
         fscanf(file, "%d ", &time_new);
         fscanf(file, "\n");
-       
+
 
 
         push_back(L, title_new, staging_new, type_new, music_new, year_of_production_new, time_new);
 
     }
 }
-
