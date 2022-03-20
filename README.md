@@ -1,156 +1,118 @@
-# jimp2p1
-<h1>Projekt z uczelni</h1>
-<h2>visual studio 2019</h2>
-<p style='margin:0cm;font-size:37px;font-family:"Calibri Light",sans-serif;text-align:center;'><strong><span style='font-size:29px;font-family:"Calibri Light",sans-serif;'>Projekt 8</span></strong></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'>Napisać program w języku ANSI C umożliwiający przechowywanie i udostępnianie informacji o zbiorze płyt z nagraniami video. Program powinien umożliwiać:</p>
-<ul style="list-style-type: disc;margin-left:8px;">
-    <li>Wprowadzanie informacji.</li>
-    <li>Udostępnianie informacji w spos&oacute;b uporządkowany.</li>
-    <li>Wyszukiwanie informacji.</li>
-    <li>Archiwizację informacji na dysku oraz wczytywanie danych z dysku.</li>
+<p style="margin-top:0pt; margin-bottom:0pt; text-align:center; line-height:normal; font-size:22pt;"><strong><span style="font-family:'Calibri Light'; letter-spacing:-0.5pt;">Projekt 8</span></strong></p>
+<p style="margin-top:0pt; margin-bottom:8pt;">Napisać program w języku ANSI C umożliwiający przechowywanie i udostępnianie informacji o zbiorze płyt z nagraniami video. Program powinien umożliwiać:</p>
+<ul style="margin:0pt; padding-left:0pt;" type="disc">
+    <li style="margin-left:10.06pt; line-height:normal; padding-left:7.94pt; font-family:serif;"><span style="font-family:Calibri;">Wprowadzanie informacji.</span></li>
+    <li style="margin-left:10.06pt; line-height:normal; padding-left:7.94pt; font-family:serif;"><span style="font-family:Calibri;">Udostępnianie informacji w sposób uporządkowany. </span></li>
+    <li style="margin-left:10.06pt; line-height:normal; padding-left:7.94pt; font-family:serif;"><span style="font-family:Calibri;">Wyszukiwanie informacji.</span></li>
+    <li style="margin-left:10.06pt; line-height:normal; padding-left:7.94pt; font-family:serif;"><span style="font-family:Calibri;">Archiwizację informacji na dysku oraz wczytywanie danych z dysku. </span></li>
 </ul>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'>Program powinien być wyposażony w przejrzysty interface użytkownika.</p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><em><u>Zakres danych opisujących pojedynczą płytę do uzgodnienia z prowadzącym zajęcia</u></em></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style="color:#5B9BD5;font-weight:bold;"><span style="font-size:19px;line-height:107%;">Rekordy opisujące płytę z nagraniem:</span></span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;font-family:Consolas;color:black;">Tytuł,</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;font-family:Consolas;color:black;">Reżyseria,</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;font-family:Consolas;color:black;">Gatunek,</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;font-family:Consolas;color:black;">Rok produkcji,</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;font-family:Consolas;color:black;">Muzyka,</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;font-family:Consolas;color:black;">Czas trwania</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style="color:#5B9BD5;font-weight:bold;"><span style="font-size:19px;line-height:107%;">&nbsp;</span></span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><em><span style='font-size:16px;line-height:107%;font-family:"Times New Roman",serif;'>&nbsp;</span></em></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:16px;line-height:107%;font-family:"Times New Roman",serif;'>&nbsp;</span></p>
-<div style='margin-top:0cm;margin-right:43.2pt;margin-bottom:8.0pt;margin-left:43.2pt;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;border-top:solid #5B9BD5 1.0pt;border-left:none;border-bottom:solid #5B9BD5 1.0pt;border-right:none;padding:10.0pt 0cm 10.0pt 0cm;'>
-    <p style='margin-top:18.0pt;margin-right:0cm;margin-bottom:18.0pt;margin-left:0cm;text-align:center;line-height:107%;border:none;padding:0cm;font-size:15px;font-family:"Calibri",sans-serif;color:#5B9BD5;font-style:italic;'><span style="font-size:29px;line-height:107%;">Instrukcja obsługi:</span></p>
-</div>
-<div style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'>
-    <ol style="margin-bottom:0cm;list-style-type: decimal;margin-left:22.15px;">
-        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="color:#5B9BD5;font-weight:bold;"><span style="line-height:107%;font-size:16px;">Po włączeniu programu ukazuje nam się UI:</span></span></li>
-    </ol>
-</div>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:36.0pt;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="color:#5B9BD5;font-weight:bold;">&nbsp;</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:36.0pt;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><br></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:36.0pt;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-weight:bold;font-style:italic;">Dostajemy informację, że baza danych została załadowana (program ma stałą pamięć ładuję dane z pliku przy włączeniu i zapisuje po wyłączeniu zgodnie z menu).</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;line-height:107%;">&nbsp;</span></p>
-<div style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'>
-    <ol style="margin-bottom:0cm;list-style-type: undefined;margin-left:22.15px;">
-        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="color:#5B9BD5;font-weight:bold;"><span style="line-height:107%;font-size:16px;">Wyświetlanie obecnego stanu bazy danych:</span></span></li>
-    </ol>
-</div>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:36.0pt;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-weight:bold;font-style:italic;">Wybieramy 2 z menu:</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:36.0pt;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-weight:bold;font-style:italic;">&nbsp;</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:36.0pt;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><br></p>
-<table style="float: left">
-    <tbody>
-        <tr>
-            <td><br></td>
-        </tr>
-        <tr>
-            <td><br></td>
-            <td><br></td>
-        </tr>
-    </tbody>
-</table>
-<p><span style="font-weight:bold;font-style:italic;">&nbsp;</span></p>
-<p><br></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:36.0pt;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-weight:bold;font-style:italic;">&nbsp;</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:36.0pt;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-weight:bold;font-style:italic;">&nbsp;</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:36.0pt;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-weight:bold;font-style:italic;">&nbsp;</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:36.0pt;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-weight:bold;font-style:italic;">&nbsp;</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:36.0pt;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-weight:bold;font-style:italic;">&nbsp;</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:36.0pt;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-weight:bold;font-style:italic;">&nbsp;</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:36.0pt;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-weight:bold;font-style:italic;">&nbsp;</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:36.0pt;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-weight:bold;font-style:italic;">&nbsp;</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:36.0pt;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-weight:bold;font-style:italic;">&nbsp;</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:36.0pt;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-weight:bold;font-style:italic;">Wyświetlają nam się wszystkie rekordy zapisane w bazie w spos&oacute;b chronologiczny.</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:36.0pt;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="color:#5B9BD5;font-weight:bold;">&nbsp;</span></p>
-<div style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'>
-    <ol style="margin-bottom:0cm;list-style-type: undefined;margin-left:22.15px;">
-        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="color:#5B9BD5;font-weight:bold;"><span style="line-height:107%;font-size:16px;">Dodawanie rekordu do bazy danych:</span></span></li>
-    </ol>
-</div>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:32.15pt;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="color:#5B9BD5;font-weight:bold;"><em>Wybieramy 1 z menu:</em></span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:32.15pt;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-weight:bold;font-style:italic;"><br>&nbsp;</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:32.15pt;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-weight:bold;font-style:italic;">Kolejno wprowadzamy parametry opisujące rekord, pamiętamy o tym by zamiast spacji wprowadzić _ i nie używać polskich znak&oacute;w .</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:32.15pt;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-weight:bold;font-style:italic;">&nbsp;</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-weight:bold;font-style:italic;">Efekt:</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-weight:bold;font-style:italic;">&nbsp;</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-weight:bold;font-style:italic;">&nbsp;</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:36.0pt;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="color:#5B9BD5;font-weight:bold;">&nbsp;</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:36.0pt;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:16px;line-height:107%;font-family:"Times New Roman",serif;'>&nbsp;</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style="color:#5B9BD5;font-weight:bold;">&nbsp;</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style="color:#5B9BD5;font-weight:bold;">&nbsp;</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style="color:#5B9BD5;font-weight:bold;">&nbsp;</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style="color:#5B9BD5;font-weight:bold;">&nbsp;</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style="color:#5B9BD5;font-weight:bold;">&nbsp;</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style="color:#5B9BD5;font-weight:bold;">&nbsp;</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style="color:#5B9BD5;font-weight:bold;">&nbsp;</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style="color:#5B9BD5;font-weight:bold;">&nbsp;</span></p>
-<div style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'>
-    <ol style="margin-bottom:0cm;list-style-type: undefined;margin-left:22.15px;">
-        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="color:#5B9BD5;font-weight:bold;"><span style="line-height:107%;font-size:16px;">Wyszukiwanie rekord&oacute;w</span></span></li>
-    </ol>
-</div>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:32.15pt;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="color:#5B9BD5;font-weight:bold;"><em>Wybieramy 3 z menu:</em></span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:32.15pt;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><br></p>
-<table style="float: left">
-    <tbody>
-        <tr>
-            <td><br></td>
-        </tr>
-        <tr>
-            <td><br></td>
-            <td><br></td>
-        </tr>
-    </tbody>
-</table>
-<p><span style="color:#5B9BD5;font-weight:bold;"><em>&nbsp;</em></span></p>
-<p><br></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:32.15pt;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="color:#5B9BD5;font-weight:bold;"><em>&nbsp;</em></span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;line-height:107%;font-family:"Times New Roman",serif;'>&nbsp;</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-weight:bold;font-style:italic;">&nbsp;</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-weight:bold;font-style:italic;">&nbsp;</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-weight:bold;font-style:italic;">Następnie wprowadzamy interesujący nas tytuł, i otrzymujemy wynik.</span></p>
-<div style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'>
-    <ol style="margin-bottom:0cm;list-style-type: undefined;margin-left:22.15px;">
-        <li style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="color:#5B9BD5;font-weight:bold;"><span style="line-height:107%;font-size:16px;">Po wykonaniu interesujących nas czynności możemy bezpiecznie zamknąć program r&oacute;wnocześnie aktualizując bazę danych.</span></span></li>
-    </ol>
-</div>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="color:#5B9BD5;font-weight:bold;">&nbsp;</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="color:#5B9BD5;font-weight:bold;">&nbsp;</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="color:#5B9BD5;font-weight:bold;">&nbsp;</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="color:#5B9BD5;font-weight:bold;">&nbsp;</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="color:#5B9BD5;font-weight:bold;">&nbsp;</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="color:#5B9BD5;font-weight:bold;">&nbsp;</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="color:#5B9BD5;font-weight:bold;">Plik przechowujący:<br>&nbsp;</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="color:#5B9BD5;font-weight:bold;">//Gwiazdka to zabezpieczenie końca pliku<br>&nbsp;</span><strong><span style="color:#5B9BD5;"><br>&nbsp;</span></strong></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="color:#5B9BD5;font-style:italic;">&nbsp;</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="color:#5B9BD5;font-style:italic;">&nbsp;</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="color:#5B9BD5;font-style:italic;">&nbsp;</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="color:#5B9BD5;font-style:italic;">&nbsp;</span></p>
-<div style='margin-top:0cm;margin-right:43.2pt;margin-bottom:8.0pt;margin-left:43.2pt;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;border-top:solid #5B9BD5 1.0pt;border-left:none;border-bottom:solid #5B9BD5 1.0pt;border-right:none;padding:10.0pt 0cm 10.0pt 0cm;'>
-    <p style='margin-top:18.0pt;margin-right:0cm;margin-bottom:18.0pt;margin-left:0cm;text-align:center;line-height:107%;border:none;padding:0cm;font-size:15px;font-family:"Calibri",sans-serif;color:#5B9BD5;font-style:italic;'><span style="color:#5B9BD5;font-style:italic;"><span style="font-size:29px;line-height:107%;font-style:normal;">Informacje techniczne</span></span></p>
-</div>
-<ul style="list-style-type: disc;">
-    <li>Program został napisany z implementacją listy dynamicznej dwukierunkowej (wykorzystanay jest tylko jeden kierunek ,ale zawsze można zrobić upgrade funkcjonalności)</li>
-    <li>To oznacza ,że ma nie &bdquo;skończoną pamięć&rdquo; &ndash; zależną od sprzętu ; ponieważ na bieżąco rezerwuje on pamięć.</li>
-    <li>&nbsp;Program jest rozproszony &ndash; ma maina, kt&oacute;ry służy jedynie wywołaniu funkcji.</li>
-    <li>Składa się z wielu funkcji, kt&oacute;re odpowiadają za wykonanie operacji. Ma strukturę części dla łatwości edycji i zgodności ze sztuką programowania.</li>
-    <li>Program składa się z 3 struktur by utworzyć wcześniej wspomnianą listę dynamiczną(head, węzeł z danymi i z danymi płyt).</li>
-    <li>Posiada 8 niezależnych funkcji.</li>
-    <li>Wykorzystuję w pełni potencjał wskaźnik&oacute;w, używam ich w każdej funkcji.</li>
+<p style="margin-top:0pt; margin-bottom:8pt;">Program powinien być wyposażony w przejrzysty interface użytkownika.</p>
+<p style="margin-top:0pt; margin-bottom:8pt;"><em><u>Zakres danych opisujących pojedynczą płytę do uzgodnienia z prowadzącym zajęcia</u></em></p>
+<p style="margin-top:0pt; margin-bottom:0pt; text-align:justify; line-height:108%; font-size:14pt;"><strong><span style="font-variant:small-caps; letter-spacing:0.25pt; color:#5b9bd5;">Rekordy opisujące płytę z nagraniem:</span></strong></p>
+<p style="margin-top:0pt; margin-bottom:0pt; line-height:normal; font-size:12pt;"><span style="font-family:Consolas;">Tytuł,</span></p>
+<p style="margin-top:0pt; margin-bottom:0pt; line-height:normal; font-size:12pt;"><span style="font-family:Consolas;">Reżyseria,</span></p>
+<p style="margin-top:0pt; margin-bottom:0pt; line-height:normal; font-size:12pt;"><span style="font-family:Consolas;">Gatunek,</span></p>
+<p style="margin-top:0pt; margin-bottom:0pt; line-height:normal; font-size:12pt;"><span style="font-family:Consolas;">Rok produkcji,</span></p>
+<p style="margin-top:0pt; margin-bottom:0pt; line-height:normal; font-size:12pt;"><span style="font-family:Consolas;">Muzyka,</span></p>
+<p style="margin-top:0pt; margin-bottom:0pt; line-height:normal; font-size:12pt;"><span style="font-family:Consolas;">Czas trwania</span></p>
+<p style="margin-top:0pt; margin-bottom:0pt; text-align:justify; line-height:108%; font-size:14pt;"><strong><span style="font-variant:small-caps; letter-spacing:0.25pt; color:#5b9bd5;"> </span></strong></p>
+<p style="margin-top:0pt; margin-bottom:0pt; text-align:justify; line-height:108%; font-size:12pt;"><em><span style="font-family:'Times New Roman';"> </span></em></p>
+<p style="margin-top:0pt; margin-bottom:0pt; text-align:justify; line-height:108%; font-size:12pt;"><span style="font-family:'Times New Roman';"> </span></p>
+<p style="margin:18pt 43.2pt; text-align:center; line-height:108%; border-top:0.75pt solid #5b9bd5; border-bottom:0.75pt solid #5b9bd5; padding-top:10pt; padding-bottom:10pt; font-size:22pt;"><em><span style="color:#5b9bd5;">Instrukcja obsługi:</span></em></p>
+<ol style="margin:0pt; padding-left:0pt;" type="1">
+    <li style="margin-left:28.26pt; line-height:108%; padding-left:3.89pt; font-size:12pt; font-weight:bold; font-variant:small-caps; letter-spacing:0.25pt; color:#5b9bd5;">Po włączeniu programu ukazuje nam się UI:</li>
+</ol>
+<p style="margin-top:0pt; margin-left:36pt; margin-bottom:0pt;"><strong><span style="font-variant:small-caps; letter-spacing:0.25pt; color:#5b9bd5;"> </span></strong></p>
+<p style="margin-top:0pt; margin-left:36pt; margin-bottom:0pt;"><img src="https://myfiles.space/user_files/115952_84cfd198e6d079cf/1647818302_sprawozdanie-ansi-c/1647818302_sprawozdanie-ansi-c-1.png" width="298" height="225" alt="Obraz zawierający tekst
+
+Opis wygenerowany automatycznie"></p>
+<p style="margin-top:0pt; margin-left:36pt; margin-bottom:8pt;"> </p>
+<p style="margin-top:0pt; margin-bottom:8pt;"><strong><em><span style="letter-spacing:0.25pt;">Dostajemy informację, że baza danych została załadowana (program ma stałą pamięć ładuję dane z pliku przy włączeniu i zapisuje po wyłączeniu zgodnie z menu).</span></em></strong></p>
+<p style="margin-top:0pt; margin-bottom:8pt;"> </p>
+<p style="margin-top:0pt; margin-bottom:8pt; line-height:108%; font-size:12pt;"> </p>
+<ol start="2" style="margin:0pt; padding-left:0pt;" type="1">
+    <li style="margin-left:28.26pt; line-height:108%; padding-left:3.89pt; font-size:12pt; font-weight:bold; font-variant:small-caps; letter-spacing:0.25pt; color:#5b9bd5;">Wyświetlanie obecnego stanu bazy danych:</li>
+</ol>
+<p style="margin-top:0pt; margin-left:36pt; margin-bottom:0pt;"><strong><em><span style="letter-spacing:0.25pt;">Wybieramy 2 z menu:</span></em></strong></p>
+<p style="margin-top:0pt; margin-left:36pt; margin-bottom:0pt;"><strong><em><span style="letter-spacing:0.25pt;"> </span></em></strong></p>
+<p style="margin-top:0pt; margin-left:36pt; margin-bottom:0pt;"><span style="height:0pt; display:block; position:absolute; z-index:0;"><img src="https://myfiles.space/user_files/115952_84cfd198e6d079cf/1647818302_sprawozdanie-ansi-c/1647818302_sprawozdanie-ansi-c-2.png" width="754" height="150" alt="Obraz zawierający tekst, zrzut ekranu
+
+Opis wygenerowany automatycznie" style="margin: 0 0 0 auto; text-align: right; display: block; "></span><strong><em><span style="letter-spacing:0.25pt;"> </span></em></strong></p>
+<p style="margin-top:0pt; margin-left:36pt; margin-bottom:0pt;"><strong><em><span style="letter-spacing:0.25pt;"> </span></em></strong></p>
+<p style="margin-top:0pt; margin-left:36pt; margin-bottom:0pt;"><strong><em><span style="letter-spacing:0.25pt;"> </span></em></strong></p>
+<p style="margin-top:0pt; margin-left:36pt; margin-bottom:0pt;"><strong><em><span style="letter-spacing:0.25pt;"> </span></em></strong></p>
+<p style="margin-top:0pt; margin-left:36pt; margin-bottom:0pt;"><strong><em><span style="letter-spacing:0.25pt;"> </span></em></strong></p>
+<p style="margin-top:0pt; margin-left:36pt; margin-bottom:0pt;"><strong><em><span style="letter-spacing:0.25pt;"> </span></em></strong></p>
+<p style="margin-top:0pt; margin-left:36pt; margin-bottom:0pt;"><strong><em><span style="letter-spacing:0.25pt;"> </span></em></strong></p>
+<p style="margin-top:0pt; margin-left:36pt; margin-bottom:0pt;"><strong><em><span style="letter-spacing:0.25pt;"> </span></em></strong></p>
+<p style="margin-top:0pt; margin-left:36pt; margin-bottom:0pt;"><strong><em><span style="letter-spacing:0.25pt;"> </span></em></strong></p>
+<p style="margin-top:0pt; margin-left:36pt; margin-bottom:0pt;"><strong><em><span style="letter-spacing:0.25pt;"> </span></em></strong></p>
+<p style="margin-top:0pt; margin-left:36pt; margin-bottom:0pt;"><strong><em><span style="letter-spacing:0.25pt;">Wyświetlają nam się wszystkie rekordy zapisane w bazie w sposób chronologiczny.</span></em></strong></p>
+<p style="margin-top:0pt; margin-left:36pt; margin-bottom:0pt;"><strong><span style="font-variant:small-caps; letter-spacing:0.25pt; color:#5b9bd5;"> </span></strong></p>
+<ol start="3" style="margin:0pt; padding-left:0pt;" type="1">
+    <li style="margin-left:28.26pt; margin-bottom:8pt; line-height:108%; padding-left:3.89pt; font-size:12pt; font-weight:bold; font-style:italic; letter-spacing:0.25pt;"><span style="font-style:normal; font-variant:small-caps; color:#5b9bd5;">Dodawanie rekordu do bazy danych:</span></li>
+</ol>
+<p style="margin-top:0pt; margin-left:32.15pt; margin-bottom:8pt;"><strong><em><span style="letter-spacing:0.25pt;">Wybieramy 1 z menu:</span></em></strong></p>
+<p style="margin-top:0pt; margin-left:32.15pt; margin-bottom:0pt;"><img src="https://myfiles.space/user_files/115952_84cfd198e6d079cf/1647818302_sprawozdanie-ansi-c/1647818302_sprawozdanie-ansi-c-3.png" width="337" height="141" alt="Obraz zawierający tekst
+
+Opis wygenerowany automatycznie"><br><strong><em><span style="letter-spacing:0.25pt;"> </span></em></strong></p>
+<p style="margin-top:0pt; margin-left:32.15pt; margin-bottom:0pt;"><strong><em><span style="letter-spacing:0.25pt;">Kolejno wprowadzamy parametry opisujące rekord, pamiętamy o tym by zamiast spacji wprowadzić _ i nie używać polskich znaków .</span></em></strong></p>
+<p style="margin-top:0pt; margin-left:32.15pt; margin-bottom:8pt;"><strong><em><span style="letter-spacing:0.25pt;"> </span></em></strong></p>
+<p style="margin-top:0pt; margin-bottom:8pt;"><span style="height:0pt; display:block; position:absolute; z-index:1;"><img src="https://myfiles.space/user_files/115952_84cfd198e6d079cf/1647818302_sprawozdanie-ansi-c/1647818302_sprawozdanie-ansi-c-4.png" width="724" height="156" alt="Obraz zawierający tekst
+
+Opis wygenerowany automatycznie" style="margin: 0 0 0 auto; text-align: right; display: block; "></span><strong><em><span style="letter-spacing:0.25pt;">Efekt:</span></em></strong></p>
+<p style="margin-top:0pt; margin-bottom:8pt;"><strong><em><span style="letter-spacing:0.25pt;"> </span></em></strong></p>
+<p style="margin-top:0pt; margin-bottom:8pt;"><strong><em><span style="letter-spacing:0.25pt;"> </span></em></strong></p>
+<p style="margin-top:0pt; margin-left:36pt; margin-bottom:8pt;"><strong><span style="font-variant:small-caps; letter-spacing:0.25pt; color:#5b9bd5;"> </span></strong></p>
+<p style="margin-top:0pt; margin-bottom:8pt;"> </p>
+<p style="margin-top:0pt; margin-bottom:8pt;"> </p>
+<p style="margin-top:0pt; margin-left:36pt; margin-bottom:0pt; text-align:justify; line-height:108%; font-size:12pt;"><span style="font-family:'Times New Roman';"> </span></p>
+<p style="margin-top:0pt; margin-bottom:0pt; text-align:justify;"><strong><span style="font-variant:small-caps; letter-spacing:0.25pt; color:#5b9bd5;"> </span></strong></p>
+<p style="margin-top:0pt; margin-bottom:0pt; text-align:justify;"><strong><span style="font-variant:small-caps; letter-spacing:0.25pt; color:#5b9bd5;"> </span></strong></p>
+<p style="margin-top:0pt; margin-bottom:0pt; text-align:justify;"><strong><span style="font-variant:small-caps; letter-spacing:0.25pt; color:#5b9bd5;"> </span></strong></p>
+<p style="margin-top:0pt; margin-bottom:0pt; text-align:justify;"><strong><span style="font-variant:small-caps; letter-spacing:0.25pt; color:#5b9bd5;"> </span></strong></p>
+<p style="margin-top:0pt; margin-bottom:0pt; text-align:justify;"><strong><span style="font-variant:small-caps; letter-spacing:0.25pt; color:#5b9bd5;"> </span></strong></p>
+<p style="margin-top:0pt; margin-bottom:0pt; text-align:justify;"><strong><span style="font-variant:small-caps; letter-spacing:0.25pt; color:#5b9bd5;"> </span></strong></p>
+<p style="margin-top:0pt; margin-bottom:0pt; text-align:justify;"><strong><span style="font-variant:small-caps; letter-spacing:0.25pt; color:#5b9bd5;"> </span></strong></p>
+<p style="margin-top:0pt; margin-bottom:0pt; text-align:justify;"><strong><span style="font-variant:small-caps; letter-spacing:0.25pt; color:#5b9bd5;"> </span></strong></p>
+<ol start="4" style="margin:0pt; padding-left:0pt;" type="1">
+    <li style="margin-left:28.26pt; text-align:justify; line-height:108%; padding-left:3.89pt; font-size:12pt; font-weight:bold; font-variant:small-caps; letter-spacing:0.25pt; color:#5b9bd5;">Wyszukiwanie rekordów</li>
+</ol>
+<p style="margin-top:0pt; margin-left:32.15pt; margin-bottom:0pt;"><strong><em><span style="letter-spacing:0.25pt;">Wybieramy 3 z menu:</span></em></strong></p>
+<p style="margin-top:0pt; margin-left:32.15pt; margin-bottom:0pt;"><span style="height:0pt; display:block; position:absolute; z-index:2;"><img src="https://myfiles.space/user_files/115952_84cfd198e6d079cf/1647818302_sprawozdanie-ansi-c/1647818302_sprawozdanie-ansi-c-5.png" width="736" height="88" alt="" style="margin: 0 0 0 auto; text-align: right; display: block; "></span><strong><em><span style="letter-spacing:0.25pt;"> </span></em></strong></p>
+<p style="margin-top:0pt; margin-left:32.15pt; margin-bottom:8pt;"><strong><em><span style="letter-spacing:0.25pt;"> </span></em></strong></p>
+<p style="margin-top:0pt; margin-bottom:8pt; line-height:108%; font-size:12pt;"><span style="font-family:'Times New Roman';"> </span></p>
+<p style="margin-top:0pt; margin-bottom:8pt;"><strong><em><span style="letter-spacing:0.25pt;"> </span></em></strong></p>
+<p style="margin-top:0pt; margin-bottom:8pt;"><strong><em><span style="letter-spacing:0.25pt;"> </span></em></strong></p>
+<p style="margin-top:0pt; margin-bottom:8pt;"><strong><em><span style="letter-spacing:0.25pt;">Następnie wprowadzamy interesujący nas tytuł, i otrzymujemy wynik.</span></em></strong></p>
+<ol start="5" style="margin:0pt; padding-left:0pt;" type="1">
+    <li style="margin-left:28.26pt; margin-bottom:8pt; line-height:108%; padding-left:3.89pt; font-size:12pt; font-weight:bold; font-variant:small-caps; letter-spacing:0.25pt; color:#5b9bd5;"><span style="height:0pt; display:block; position:absolute; z-index:3;"><img src="https://myfiles.space/user_files/115952_84cfd198e6d079cf/1647818302_sprawozdanie-ansi-c/1647818302_sprawozdanie-ansi-c-6.png" width="715" height="126" alt="" style="margin: 0 0 0 auto; text-align: right; display: block; "></span>Po wykonaniu interesujących nas czynności możemy bezpiecznie zamknąć program równocześnie aktualizując bazę danych.</li>
+</ol>
+<p style="margin-top:0pt; margin-bottom:8pt;"><strong><span style="font-variant:small-caps; letter-spacing:0.25pt; color:#5b9bd5;"> </span></strong></p>
+<p style="margin-top:0pt; margin-bottom:8pt;"><strong><span style="font-variant:small-caps; letter-spacing:0.25pt; color:#5b9bd5;"> </span></strong></p>
+<p style="margin-top:0pt; margin-bottom:8pt;"><strong><span style="font-variant:small-caps; letter-spacing:0.25pt; color:#5b9bd5;"> </span></strong></p>
+<p style="margin-top:0pt; margin-bottom:8pt;"><strong><span style="font-variant:small-caps; letter-spacing:0.25pt; color:#5b9bd5;"> </span></strong></p>
+<p style="margin-top:0pt; margin-bottom:8pt;"><strong><span style="font-variant:small-caps; letter-spacing:0.25pt; color:#5b9bd5;"> </span></strong></p>
+<p style="margin-top:0pt; margin-bottom:8pt;"><strong><span style="font-variant:small-caps; letter-spacing:0.25pt; color:#5b9bd5;"> </span></strong></p>
+<p style="margin-top:0pt; margin-bottom:8pt;"><strong><span style="font-variant:small-caps; letter-spacing:0.25pt; color:#5b9bd5;">Plik przechowujący:</span></strong><br><img src="https://myfiles.space/user_files/115952_84cfd198e6d079cf/1647818302_sprawozdanie-ansi-c/1647818302_sprawozdanie-ansi-c-7.png" width="605" height="170" alt="Obraz zawierający tekst
+
+Opis wygenerowany automatycznie"><strong><span style="font-variant:small-caps; letter-spacing:0.25pt; color:#5b9bd5;"> </span></strong></p>
+<p style="margin-top:0pt; margin-bottom:8pt;"><strong><span style="font-variant:small-caps; letter-spacing:0.25pt; color:#5b9bd5;">//Gwiazdka to zabezpieczenie końca pliku</span></strong><br><br><em><span style="color:#5b9bd5;"> </span></em></p>
+<p style="margin-top:0pt; margin-bottom:8pt;"><em><span style="color:#5b9bd5;"> </span></em></p>
+<p style="margin-top:0pt; margin-bottom:8pt;"><em><span style="color:#5b9bd5;"> </span></em></p>
+<p style="margin-top:0pt; margin-bottom:8pt;"><em><span style="color:#5b9bd5;"> </span></em></p>
+<p style="margin-top:0pt; margin-bottom:8pt;"><em><span style="color:#5b9bd5;"> </span></em></p>
+<p style="margin:18pt 43.2pt; text-align:center; line-height:108%; border-top:0.75pt solid #5b9bd5; border-bottom:0.75pt solid #5b9bd5; padding-top:10pt; padding-bottom:10pt; font-size:22pt;"><em><span style="color:#5b9bd5;">Informacje techniczne</span></em></p>
+<ul style="margin:0pt; padding-left:0pt;" type="disc">
+    <li style="margin-left:28.06pt; padding-left:7.94pt; font-family:serif;"><span style="font-family:Calibri;">Program został napisany z implementacją listy dynamicznej dwukierunkowej (wykorzystanay jest tylko jeden kierunek ,ale zawsze można zrobić upgrade funkcjonalności)</span></li>
+    <li style="margin-left:28.06pt; padding-left:7.94pt; font-family:serif;"><span style="font-family:Calibri;">To oznacza ,że ma nie „skończoną pamięć” – zależną od sprzętu ; ponieważ na bieżąco rezerwuje on pamięć.</span></li>
+    <li style="margin-left:28.06pt; padding-left:7.94pt; font-family:serif;"><span style="font-family:Calibri;"> </span><span style="font-family:Calibri;">Program jest rozproszony – ma maina, który służy jedynie wywołaniu funkcji.</span></li>
+    <li style="margin-left:28.06pt; padding-left:7.94pt; font-family:serif;"><span style="font-family:Calibri;">Składa się z wielu funkcji, które odpowiadają za wykonanie operacji. Ma strukturę części dla łatwości edycji i zgodności ze sztuką programowania.</span></li>
+    <li style="margin-left:28.06pt; padding-left:7.94pt; font-family:serif;"><span style="font-family:Calibri;">Program składa się z 3 struktur by utworzyć wcześniej wspomnianą listę dynamiczną(head, węzeł z danymi i z danymi płyt).</span></li>
+    <li style="margin-left:28.06pt; padding-left:7.94pt; font-family:serif;"><span style="font-family:Calibri;">Posiada 8 niezależnych funkcji.</span></li>
+    <li style="margin-left:28.06pt; margin-bottom:8pt; padding-left:7.94pt; font-family:serif;"><span style="font-family:Calibri;">Wykorzystuję w pełni potencjał wskaźników, używam ich w każdej funkcji.</span></li>
 </ul>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
-<div style='margin-top:0cm;margin-right:43.2pt;margin-bottom:8.0pt;margin-left:43.2pt;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;border-top:solid #5B9BD5 1.0pt;border-left:none;border-bottom:solid #5B9BD5 1.0pt;border-right:none;padding:10.0pt 0cm 10.0pt 0cm;'>
-    <p style='margin-top:18.0pt;margin-right:0cm;margin-bottom:18.0pt;margin-left:0cm;text-align:center;line-height:107%;border:none;padding:0cm;font-size:15px;font-family:"Calibri",sans-serif;color:#5B9BD5;font-style:italic;'><span style="font-size:29px;line-height:107%;">Podsumowanie</span></p>
-</div>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'>W programie skupiłem się gł&oacute;wnie na optymalności i kodzie zgodnym ze standardem programowania, ponieważ chce go wykorzystać na rzecz portfolio do CV. Dlatego szczeg&oacute;ł&oacute;w wyświetlania nie dopracowałem tak bardzo. Za to użyłem optymalnych spos&oacute;b opisanych w Informacjach technicznych. Jestem zadowolony z mojego projektu, ponieważ nauczyłem się przy nim tworzyć i pracować z listami dynamicznymi. Uważam ,że wyr&oacute;żnia się na tle program&oacute;w przygotowanych przez innych. Polecam zajrzeć do kodu <span style='font-family:"Segoe UI Emoji",sans-serif;'>😊</span></p>
-
-
-
+<p style="margin-top:0pt; margin-bottom:8pt;"> </p>
+<p style="margin-top:0pt; margin-bottom:8pt;"> </p>
+<p style="margin:18pt 43.2pt; text-align:center; line-height:108%; border-top:0.75pt solid #5b9bd5; border-bottom:0.75pt solid #5b9bd5; padding-top:10pt; padding-bottom:10pt; font-size:22pt;"><em><span style="color:#5b9bd5;">Podsumowanie</span></em></p>
+<p style="margin-top:0pt; margin-bottom:8pt;">W programie skupiłem się głównie na optymalności i kodzie zgodnym ze standardem programowania, ponieważ chce go wykorzystać na rzecz portfolio do CV. Dlatego szczegółów wyświetlania nie dopracowałem tak bardzo. Za to użyłem optymalnych sposób opisanych w Informacjach technicznych. Jestem zadowolony z mojego projektu, ponieważ nauczyłem się przy nim tworzyć i pracować z listami dynamicznymi. Uważam ,że wyróżnia się na tle programów przygotowanych przez innych. Polecam zajrzeć do kodu <span style="font-family:'Segoe UI Emoji';">😊</span></p>
