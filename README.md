@@ -114,5 +114,4 @@ Opis wygenerowany automatycznie"><strong><span style="font-variant:small-caps; l
 </ul>
 <p style="margin-top:0pt; margin-bottom:8pt;"> </p>
 <p style="margin-top:0pt; margin-bottom:8pt;"> </p>
-<p style="margin:18pt 43.2pt; text-align:center; line-height:108%; border-top:0.75pt solid #5b9bd5; border-bottom:0.75pt solid #5b9bd5; padding-top:10pt; padding-bottom:10pt; font-size:22pt;"><em><span style="color:#5b9bd5;">Podsumowanie</span></em></p>
-<p style="margin-top:0pt; margin-bottom:8pt;">W programie skupiłem się głównie na optymalności i kodzie zgodnym ze standardem programowania, ponieważ chce go wykorzystać na rzecz portfolio do CV. Dlatego szczegółów wyświetlania nie dopracowałem tak bardzo. Za to użyłem optymalnych sposób opisanych w Informacjach technicznych. Jestem zadowolony z mojego projektu, ponieważ nauczyłem się przy nim tworzyć i pracować z listami dynamicznymi. Uważam ,że wyróżnia się na tle programów przygotowanych przez innych. Polecam zajrzeć do kodu <span style="font-family:'Segoe UI Emoji';">😊</span></p>
+
